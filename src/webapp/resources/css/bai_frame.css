@@ -1,0 +1,132 @@
+@import url("ms_css_basic.css");
+@import url("ms_css_navigation.css");
+@import url("emb_facelift.css");
+@import url("ext_style.css");
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 12px;
+    /*background: #797C82 url(../pictures/bg.jpg) repeat-y 0 0;
+    background-position: 50% 0; 
+    background-repeat: no-repeat;
+ /* background: #EFF1F3 url(../pictures/bg_body.gif) repeat-y 0 0; */
+	background-color: black;
+}
+
+
+a {
+      text-decoration: none;
+      color: #003366;
+}
+
+a:hover {
+      text-decoration: none;
+      color: #00ADEF;
+}
+
+
+.f1 {
+	font-size: 20px;
+	font-family:Arial, Helvetica, Sans-serif;
+	color: #666666
+}
+
+.f1a {
+      font-size: 12px;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #FFFFFF
+    }
+
+.f2 {
+	line-height:15px;
+	font-size: 12px;
+	font-family:Arial,Helvetica,Sans-serif;
+	color: #666666;
+	margin: 0;
+	padding: 0;
+}
+
+.f2a {
+      font-size: 12px;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #FFFFFF;
+    }
+
+.f2b {
+      font-size: 12px;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #000000;
+      margin-bottom: 0pt;
+    }
+
+.f2c {
+      font-size: 12px;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #666666;
+	  font-weight:bold;
+    }
+ 
+.f3 {
+      font-size: 8pt;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #000000;
+      margin-bottom: 3pt;
+    }
+
+.f4 {
+      font-size: 8pt;
+      font-family:Arial,Helvetica,Sans-serif;
+      color: #000000;
+    }
+
+
+
+/* ------------------------------------------------- */
+/* in-depth - modelmenu                              */
+/* ------------------------------------------------- */
+
+div#ms-header { border-bottom:55px solid #FFF; }
+
+#bai-modelmenu { position: fixed; top: 135px; /*height:18px;*/ border-bottom:1px solid #dddddd; width:992px; margin-left:0; z-index:100; }
+#bai-modelmenu ul { margin-left:inherit; margin:0 0 0 10px; padding:0;  }
+
+#bai-modelmenu li { float: left; list-style-type:none; display:block; /* background-image:url(../pictures/navigation/bg_navi_tab.gif); background-position:0 -200px; */     background-color: #ECECEC;
+    border: 1px solid #DDDDDD;
+    margin-right: -1px;
+    position: relative;
+    top: 1px;/* height:19px; */
+}
+#bai-modelmenu li a { /*background-image: url("../pictures/navigation/bg_navi_tab.gif");  background-position: 100% 0;  background-color:#0F0;*/
+/*border:1px solid #900;  height:19px;*/ /*display: block; float: left; margin-left: 1px; padding: 0 9px 0 7px; line-height:19px;*/
+    display: block;
+    float: left;
+    margin-left: 1px;
+    padding: 0 7px 0 6px; height:17px; line-height:17px;
+ }
+
+#bai-modelmenu li.bai-modelmenu-start { /*background:none; */ /*width:1px; background-position:100% -100px; display:none; */ width:1px; background-color:transparent; height:18px; border:none; border-right:1px solid #DDDDDD; }
+
+#bai-modelmenu li.bai-modelmenu-li-act { /* background-position:0 -300px;*/     background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: medium none;
+    margin-left: 1px; }
+#bai-modelmenu li.bai-modelmenu-li-act  a { /* background-position: 100% -100px;*/ color:#00ADEF; }
+
+
+
+/* ------------------------------------------------- */
+/* iframe + div                                      */
+/* ------------------------------------------------- */
+#body-iframe-div { width: 992px; position:fixed; left:0px; top:172px; }
+
+/* Hoehe alt: 525 px bei 700px Fenster */
+iframe#body-iframe { height:461px; width:992px; border:0px none; position:absolute; background-color:#FFFFFF; }
+
+/* ------------------------------------------------- */
+/* Anpassungen fuer Layouttrennung                   */
+/* ------------------------------------------------- */
+div#ms-footer { display:block; /* top:auto !important;*/ }

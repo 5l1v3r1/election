@@ -1,0 +1,560 @@
+/*******************************************************************************
+********************************************************************************
+	Project		: Mercedes Benz Deutschland
+********************************************************************************
+*******************************************************************************/
+.ms-navi {
+	margin:0;
+	line-height:1;
+}
+
+
+
+/*	Header-Navigations *********************************************************
+*******************************************************************************/
+div#ms-navi-home, 
+div#ms-navi-meta, 
+div#ms-navi-main {
+	position:absolute;
+	z-index:100;
+}
+div#ms-navi-home {
+	z-index:100;
+}
+div#ms-navi-main {
+	top:8px;
+}
+div#ms-navi-home, 
+div#ms-navi-main {
+	left:0;
+}
+div#ms-navi-meta {
+	top: 0px;
+	right:10px;
+}
+div#ms-navi-main {
+	top:93px;
+	z-index:10;
+	width:992px;
+	background:url(../pictures/menu-bg.gif) repeat-x;
+}
+
+div#ms-navi-home {
+	/*position:relative;*/
+	float:left;
+}
+
+
+
+div#ms-navi-meta ul li{
+	display:block;
+	float:left;
+/*	background-image:url(../pictures/bg_navi_meta_l.png);
+	background-position:0px -1000px; */
+	background-image:url(../pictures/bg_navi_meta.gif);
+	background-position:0px 12px;
+	line-height:20px;
+}
+/*
+	margin-right:-1px;
+*/
+div#ms-navi-meta ul li.ms-active {
+	background-image:url(../pictures/bg_navi_meta_l_a_24b.png);
+}
+
+div#ms-navi-meta ul li a:hover,
+div#ms-navi-meta ul li.ms-active {
+	/*background-position:0px -1px;*/
+	/* background-color:#00FF66; background-image:none;*/
+	background-image:url(../pictures/bg_navi_meta_hover.gif);
+	background-position: 0 -1px;
+}
+
+/*
+	Styles for JavaScript Rollovers
+*/
+div#ms-navi-meta ul li.moveBackPos {
+	background-image:url(../pictures/bg_navi_meta_l.png);
+	background-position:0px -1px;
+}
+
+div#ms-navi-meta ul li.hideBackPos {
+	background-image:url(../pictures/bg_navi_meta_l.png);
+	background-position:0px -1000px;
+}
+
+div#ms-navi-meta ul li a {
+/*	background-image:url(../pictures/bg_navi_meta_r.png);
+	background-position:100% -1000px; */
+}
+div#ms-navi-meta ul li.ms-active a {
+	background-image:url(../pictures/bg_navi_meta_r_a_24b.png);
+}
+
+div#ms-navi-meta ul li.ms-active a:hover {
+	background-image:url(../pictures/bg_navi_meta_r.png);
+	background-position:100% -1px;
+}
+
+div#ms-navi-meta ul li:hover a, 
+div#ms-navi-meta ul li a:hover, 
+div#ms-navi-meta ul li.ms-active a {
+	background-position:100% -1px;
+} 
+div#ms-navi-meta ul li a {
+	display:inline;
+	float:left;
+	padding:6px 11px 2px;
+	/* margin-left:2px; */
+}
+div#ms-navi-meta ul li a span {
+	padding:0 10px 0 10px;
+	border-right:1px solid #333;
+}
+div#ms-navi-meta ul li:hover a span, 
+div#ms-navi-meta ul li a:hover span, 
+div#ms-navi-meta ul li.ms-active a span, 
+div#ms-navi-meta ul li.ms-active-next a span, 
+div#ms-navi-meta ul li.ms-navi-last-li a span {
+/*	padding-right:10px; */
+padding:0; 
+	border-right:0px;
+}
+/* */
+div#ms-navi-meta ul li.mbhome {
+	background-position:0 -100px;
+}
+/* Nachfolgeelementen bg entfernen */
+div#ms-navi-meta ul li:hover + li {
+	background-position:0 -100px; 
+}
+
+/*	Home-Navigation ************************************************************
+*******************************************************************************/
+div#ms-navi-home ul li {
+	position:relative;
+	display:block;
+	background-image:url(../pictures/bg_navi_home_l_24b.png);
+	background-position:0px -1000px;
+}
+div#ms-navi-home ul li.ms-active {
+	background-image:url(../pictures/bg_navi_home_l_a_24b.png);
+	background-position:0px -3px;
+}
+div#ms-navi-home ul li.ms-active a {
+	background-image:url(../pictures/bg_navi_home_r_a_24b.png);
+	background-position:100% -2px;
+}
+div#ms-navi-home ul li:hover, 
+div#ms-navi-home ul li.ms-active:hover {
+	background-image:url(../pictures/bg_navi_home_r_24b.png);
+	background-position:100% 100%;
+	width:100%;
+}
+
+div#ms-navi-home ul li.ms-active:hover a {
+	background:none;
+	top: 0px;
+}
+
+div#ms-navi-home ul li div.ms-navi-home-fly {
+	margin-right:4px;
+}
+div#ms-navi-home ul li:hover div.ms-navi-home-fly {
+	background-image:url(../pictures/bg_navi_home_l_24b.png);
+	background-position:0% 100%;
+}
+
+
+div#ms-navi-home ul li a {
+	display:block;
+	margin-left:2px;
+	padding:8px 10px 9px 8px;
+}
+/*	reset */
+div#ms-navi-home ul li ul li,
+div#ms-navi-home ul li:hover ul li, 
+div#ms-navi-home ul li.ms-active ul li {
+	background:none;
+}
+div#ms-navi-home ul li ul li, 
+div#ms-navi-home ul li.ms-active ul li {
+	padding:0;
+}
+div#ms-navi-home ul li:hover ul li, 
+div#ms-navi-home ul li.ms-active:hover ul li {
+	width:auto;
+}
+
+
+
+div#ms-navi-home ul li ul {
+	display:none;
+	margin-top:-2px;
+	line-height:12px;
+}
+div#ms-navi-home ul li:hover ul {
+	display:block;
+}
+/* padding-left from ms_css_basic.css*/
+div#ms-navi-home ul li ul li a, 
+div#ms-navi-home ul li.ms-active:hover ul li a {
+	clear:both;
+	margin-left:0;
+	padding:0 0 2px 19px;
+	width:118px;
+}
+div#ms-navi-home ul li ul li.ms-navi-last-li a,
+div#ms-navi-home ul li.ms-active ul li.ms-navi-last-li a {
+	padding-bottom:10px;
+}
+
+/*	Core-Navigation ************************************************************
+*******************************************************************************/
+
+div#ms-navi-main ul li {
+	position:relative;
+	display:block;
+	float:left;
+	/* background-image:url(../pictures/bg_navi_main_l.png);
+	background-position:0px -100px;*/
+}
+
+div#ms-navi-main ul li a {
+	display:block;
+	line-height:24px;
+	/* padding:8px 10px 9px 8px; */
+	/* background-image:url(../pictures/bg_navi_main_r.png);background-position:100% -100px;*/
+	cursor: pointer;
+    padding: 0 8px;
+	
+}
+
+div#ms-navi-main ul li.ms-active
+ {
+	/*background-image:url(../pictures/bg_navi_main_l_a.gif);
+	background-position:0px 0px;*/
+}
+div#ms-navi-main ul li.ms-active a
+ {
+/*	background-image:url(../pictures/bg_navi_main_r_a.gif);
+	background-position:100% 0px; */
+	color:#00ADEF;
+}
+
+/*	Hover */
+div#ms-navi-main ul li.ms-fly-hover {
+/*	background-image:url(../pictures/bg_navi_main_l.png);
+	background-position:0px 0px; */
+} 
+div#ms-navi-main ul li.ms-fly-hover a {
+/*	background-image:url(../pictures/bg_navi_main_r.png);
+	background-position:100% 0px;
+	color:#00ADEF !important; */
+}
+
+
+
+/*	reset for sub */
+div#ms-navi-main ul li ul li, 
+div#ms-navi-main ul li.ms-fly-hover ul li, 
+div#ms-navi-main ul li.iehover ul li {
+	position:static;
+	float:none;
+	background:none;
+}
+div#ms-navi-main ul li ul li a, 
+div#ms-navi-main ul li.ms-fly-hover ul li a, 
+div#ms-navi-main ul li.iehover ul li a {
+	background:none;
+	margin-left:0;
+	padding:0;
+}
+
+
+/*	Flyout */
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 {
+	display:none;
+	position:absolute;
+	width:369px;
+	height:390px;
+	background-image:url(../pictures/bg_fly_v1_1.png);
+}
+/*
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 {
+	display:block;
+}
+*/
+
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 {
+	left:366px;
+	top:0;
+	width:367px;
+	background-image:url(../pictures/bg_fly_v1_2.png);
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 {
+	width:195px;
+	height:auto;
+	background-image:url(../pictures/bg_fly_v2_1.png);
+	background-position:0% 100%;
+}
+
+/*	Hover */
+div#ms-navi-main ul li.ms-fly-hover div.ms-navi-main-fly-v1-1, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dd ul li.ms-fly-hover div.ms-navi-main-fly-v1-2, 
+div#ms-navi-main ul li.ms-fly-hover div.ms-navi-main-fly-v2-1 {
+	display:block;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 {
+	padding-bottom:20px;
+}
+
+/*	Boxes in Flyout */
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1-left, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1-right {
+	float:left;
+	width:196px;
+} 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1-right {
+	width:170px;
+}
+
+div#ms-navi-main ul li ul.ms-navi-main-fly-v1-navi-a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-b, 
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v2-navi-b {
+	margin:0 25px 0 1px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v2-navi-b {
+	margin-right:3px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v1-navi-a {
+	margin-bottom:30px;
+	
+	margin-bottom:13px; /* 19079 */
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a {
+	margin-bottom:20px;
+}
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-b, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v2-navi-b {
+	margin-left:10px;
+}
+
+div#ms-navi-main ul li ul.ms-navi-main-fly-v1-navi-a li a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dd ul li a, 
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a li a, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 h3 {
+	display:block;
+	padding:3px 10px 2px 10px;
+}
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dd ul li dl.ms-navi-main-fly-v1-navi-d dt {
+	padding-bottom:4px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v1-navi-a li.ms-navi-first-li a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-b dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v2-navi-b dt {
+	padding-top:4px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a li a {
+	padding-top:2px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a li.ms-navi-first-li a {
+	padding-top:3px;
+	padding-bottom:3px;
+	border-top:1px solid #D8D8D8;
+}
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-b dt {
+	padding-bottom:3px;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 h3 {
+	padding-top:3px;
+}
+div#ms-navi-main ul li ul.ms-navi-main-fly-v1-navi-a li a, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dd ul li a, 
+div#ms-navi-main ul li ul.ms-navi-main-fly-v2-navi-a li a, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 h2 {
+	border-bottom:1px solid #DDD;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 h3 {
+	padding-left:0;
+}
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-d dd ul li a {
+	padding-left:19px;
+}
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-b dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v1-navi-c dt, 
+div#ms-navi-main ul li dl.ms-navi-main-fly-v2-navi-b dt {
+	font-weight:bold;
+}
+/*	Abstand nach unten ueber top-Wert naechste Deklaration  */
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 h2 {
+	margin:19px 5px 4px 15px;
+	padding-left:9px;
+	padding-bottom:1px;
+}
+
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 div.ms-navi-main-fly-v1-2-left, 
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 div.ms-navi-main-fly-v1-2-right {
+	position:absolute;
+	top:66px;
+	left:0;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 div.ms-navi-main-fly-v1-2-left {
+	width:170px;
+	margin:0 22px 0 15px;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 div.ms-navi-main-fly-v1-2-right {
+	left:207px;
+	width:140px;
+}
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-2 div.ms-navi-main-fly-v1-2-bottom {
+	position:absolute;
+	bottom:12px;
+	left:4px;
+	text-align:center;
+	width:359px;
+}
+
+
+
+
+/*	Block Navigation (Model Overview, Model Comparison) ************************
+*******************************************************************************/
+div#ms-nav8 {
+	position:absolute;
+	bottom:30px;
+	left:22px;
+}
+div#ms-comparison-stage div#ms-nav8 {
+	bottom:10px;
+}
+div#ms-nav8 li, 
+div#ms-nav8 li a,
+div#ms-nav8 li a span {
+	display:block;
+	margin:0;
+	padding:0;
+	line-height:1;
+}
+div#ms-nav8 li {
+	width:auto;
+} 
+div#ms-nav8 li a, 
+div#ms-nav8 li a span {
+	background-image:url(bg_block_navi.gif);
+} 
+div#ms-nav8 li a span {
+	padding:5px 29px 4px 11px;
+}
+div#ms-nav8 li#ms-nav8-li-1 a {
+	background-position:0px 0px;
+}
+div#ms-nav8 li#ms-nav8-li-1 a span {
+	background-position:100% -300px;
+}
+div#ms-nav8 li#ms-nav8-li-1 a:hover, 
+div#ms-nav8 li#ms-nav8-li-1 a.ms-active {
+	background-position:0px -50px;
+}
+div#ms-nav8 li#ms-nav8-li-1 a:hover span, 
+div#ms-nav8 li#ms-nav8-li-1 a.ms-active span {
+	background-position:100% -350px;
+}
+div#ms-nav8 li#ms-nav8-li-2 a {
+	background-position:0px -100px;
+}
+div#ms-nav8 li#ms-nav8-li-2 a span {
+	background-position:100% -400px;
+}
+div#ms-nav8 li#ms-nav8-li-2 a:hover, 
+div#ms-nav8 li#ms-nav8-li-2 a.ms-active {
+	background-position:0px -150px;
+}
+div#ms-nav8 li#ms-nav8-li-2 a:hover span, 
+div#ms-nav8 li#ms-nav8-li-2 a.ms-active span {
+	background-position:100% -450px;
+}
+div#ms-nav8 li#ms-nav8-li-3 a {
+	background-position:0px -200px;
+}
+div#ms-nav8 li#ms-nav8-li-3 a span {
+	background-position:100% -500px;
+}
+div#ms-nav8 li#ms-nav8-li-3 a span {
+	padding-top:7px;
+	padding-bottom:5px;
+}
+div#ms-nav8 li#ms-nav8-li-3 a:hover, 
+div#ms-nav8 li#ms-nav8-li-3 a.ms-active {
+	background-position:0px -250px;
+}
+div#ms-nav8 li#ms-nav8-li-3 a:hover span, 
+div#ms-nav8 li#ms-nav8-li-3 a.ms-active span {
+	background-position:100% -550px;
+}
+
+
+
+
+
+/* IE Corrections for Navigations
+********************************************
+*******************************************************************************/
+div#ms-footer iframe,
+div#ms-navi-main ul li div.ms-navi-main-fly-v1-1 iframe,
+div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 iframe,
+div#ms-pcn-mddl div#ms-navi-pcn-fly-v1 div#ms-navi-pcn-fly-v1-1 iframe,
+div.ms-modallayer iframe {
+      display: none;/*MOS, IE7*/
+}
+
+* html div#ms-footer iframe,
+* html div#ms-navi-main ul li div.ms-navi-main-fly-v1-1 iframe,
+* html div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 iframe,
+* html div#ms-pcn-mddl div#ms-navi-pcn-fly-v1 div#ms-navi-pcn-fly-v1-1 iframe,
+* html div.ms-modallayer iframe {
+      display:none;/*IE5*/
+      display/**/:block;/*IE5*/
+      height:390px;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:-1 !important;
+      filter:mask();
+}
+
+* html div#ms-footer iframe {
+      width:992px;
+}
+* html div#ms-navi-main ul li div.ms-navi-main-fly-v1-1 iframe {
+      width:369px;
+}
+
+* html div#ms-navi-main ul li div.ms-navi-main-fly-v2-1 iframe {
+      width:195px;
+}
+
+* html div#ms-pcn-mddl div#ms-navi-pcn-fly-v1 div#ms-navi-pcn-fly-v1-1
+iframe {
+      width:245px;
+}
+
+* html div.ms-modallayer iframe {
+      height:506px;
+      width:818px;
+}
+/*
+ * html div#ms-footer{
+	position: absolute;
+	top: 400px;
+	left: 0px;
+}
+*/
