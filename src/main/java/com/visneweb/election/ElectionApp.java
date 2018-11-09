@@ -1,21 +1,7 @@
 package com.visneweb.election;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.context.ContextLoaderListener;
-import org.springframework.web.context.request.RequestContextListener;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.context.support.GenericWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
-
-import com.visneweb.election.service.Web3jService;
 
 /**
  * Sample Spring Boot Application using web3j.
